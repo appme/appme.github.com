@@ -1,4 +1,4 @@
-appme.github.com
+appme
 ================
 
 appme
