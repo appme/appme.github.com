@@ -1,0 +1,15 @@
+layout: nil
+title : SiteMap Feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+ {% for post in site.posts %}
+ <url>
+   <loc>{{ site.production_url }}{{ post.url }}</loc>
+   <link href="{{ site.production_url }}{{ post.url }}"/>
+   <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+ </url>
+ {% endfor %}
+ 
+</feed>
